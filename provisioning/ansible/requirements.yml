@@ -1,3 +1,5 @@
+- src: capitanh.openldap-ansible-role
+  name: openldap
 - src: capitanh.oraclejdk-ansible-role
   name: oraclejdk
 - src: capitanh.jenkins-ansible-role
@@ -6,6 +8,3 @@
   name: jboss
 - src: capitanh.oraclexe-ansible-role
   name: oraclexe
-- src: capitanh.openldap-ansible-role
-  name: openldap
-
