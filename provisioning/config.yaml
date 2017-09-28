@@ -1,0 +1,15 @@
+---
+provisioning: ansible  # [puppet|ansible]
+vb_name: jboss
+vb_memory: 4096
+vb_cpus: 2
+#box_name: ubuntu/trusty64
+box_name: bento/centos-7.2
+host_name: jboss.golili.net
+locale_lc_all: en_US.UTF-8
+locale_lang: en_US.UTF-8
+ports:
+- guestPort: 8080
+  hostPort: 8080
+- guestPort: 1521
+  hostPort: 1521

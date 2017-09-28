@@ -1,0 +1,5 @@
+---
+#- import_playbook: oraclexe.yml
+- import_playbook: oraclejdk.yml
+#- import_playbook: jboss.yml
+- import_playbook: jenkins.yml

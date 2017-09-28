@@ -1,0 +1,94 @@
+jdk_basedir:           /usr/lib/java   # JDK Install dir
+jdk_version:           jdk1.8.0_131
+
+jboss_home:            /opt            # JBoss install dir
+http_port:             8090            # JBoss port for http connections
+https_port:            8443            # JBoss port for https connections
+
+oracle_http_port:      8091            # Oracle port for http connections
+oracle_listener_port:  1521            # Oracle listener port
+oracle_password:       adminpasswd     # Admin, sys and system users passwords
+
+maven_version:         3.5.0
+maven_install_dir:     /usr/lib
+
+jenkins_user:          jenkins
+jenkins_port:          8080
+jenkins_home:          /var/lib/jenkins
+jenkins_admin_email:   jenkins@golili.net
+jenkins_params:
+  url_username: admin
+  url_password: admin
+  url: 'http://localhost: 8080'
+jenkins_plugins:
+  - ace-editor
+  - ant
+  - antisamy-markup-formatter
+  - authentication-tokens
+  - bouncycastle-api
+  - branch-api
+  - build-timeout
+  - cloudbees-folder
+  - credentials
+  - credentials-binding
+  - display-url-api
+  - docker-commons
+  - docker-workflow
+  - durable-task
+  - email-ext
+  - external-monitor-job
+  - git
+  - git-client
+  - github
+  - github-api
+  - github-branch-source
+  - git-server
+  - gradle
+  - handlebars
+  - icon-shim
+  - jackson2-api
+  - jquery-detached
+  - junit
+  - ldap
+  - mailer
+  - mapdb-api
+  - matrix-auth
+  - matrix-project
+  - momentjs
+  - pam-auth
+  - pipeline-build-step
+  - pipeline-github-lib
+  - pipeline-graph-analysis
+  - pipeline-input-step
+  - pipeline-milestone-step
+  - pipeline-model-api
+  - pipeline-model-declarative-agent
+  - pipeline-model-definition
+  - pipeline-model-extensions
+  - pipeline-rest-api
+  - pipeline-stage-step
+  - pipeline-stage-tags-metadata
+  - pipeline-stage-view
+  - plain-credentials
+  - resource-disposer
+  - scm-api
+  - script-security
+  - ssh-credentials
+  - ssh-slaves
+  - structs
+  - subversion
+  - timestamper
+  - token-macro
+  - windows-slaves
+  - workflow-aggregator
+  - workflow-api
+  - workflow-basic-steps
+  - workflow-cps
+  - workflow-cps-global-lib
+  - workflow-durable-task-step
+  - workflow-job
+  - workflow-multibranch
+  - workflow-scm-step
+  - workflow-step-api
+  - workflow-support
+  - ws-cleanup

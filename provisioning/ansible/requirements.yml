@@ -1,0 +1,8 @@
+- src: capitanh.oraclejdk-ansible-role
+  name: oraclejdk
+- src: capitanh.jenkins-ansible-role
+  name: jenkins
+- src: capitanh.jboss-ansible-role
+  name: jboss
+- src: capitanh.oraclexe-ansible-role
+  name: oraclexe

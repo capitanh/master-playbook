@@ -1,0 +1,6 @@
+---
+- hosts: all
+  environment:
+    JAVA_HOME: "{{jdk_basedir}}/jdk1.8.0_131"
+  roles:
+  - oraclejdk
