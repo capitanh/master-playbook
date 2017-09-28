@@ -6,3 +6,6 @@
   name: jboss
 - src: capitanh.oraclexe-ansible-role
   name: oraclexe
+- src: capitanh.openldap-ansible-role
+  name: openldap
+

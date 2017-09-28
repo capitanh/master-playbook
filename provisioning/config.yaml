@@ -5,7 +5,7 @@ vb_memory: 4096
 vb_cpus: 2
 #box_name: ubuntu/trusty64
 box_name: bento/centos-7.2
-host_name: jboss.golili.net
+host_name: devserver.golili.net
 locale_lc_all: en_US.UTF-8
 locale_lang: en_US.UTF-8
 ports:
@@ -13,3 +13,5 @@ ports:
   hostPort: 8080
 - guestPort: 1521
   hostPort: 1521
+- guestPort: 389
+  hostPort: 10389

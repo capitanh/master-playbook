@@ -12,6 +12,11 @@ oracle_password:       adminpasswd     # Admin, sys and system users passwords
 maven_version:         3.5.0
 maven_install_dir:     /usr/lib
 
+ldap_username:         admin
+ldap_password:         secret
+ldap_basedn:           dc=golili,dc=net
+
+
 jenkins_user:          jenkins
 jenkins_port:          8080
 jenkins_home:          /var/lib/jenkins
