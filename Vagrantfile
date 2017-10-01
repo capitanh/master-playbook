@@ -6,6 +6,9 @@ settings = YAML.load_file('provisioning/config.yaml')
 ENV["DEBIAN_FRONTEND"] = 'noninteractive'
 ENV["LC_ALL"] = settings['locale_lc_all']
 ENV["LANG"] = settings['locale_lang']
+#TODO: Put every ansible vble into etcd
+#ENV["ANSIBLE_ETCD_URL"] = 'http://127.0.0.1:2379'
+#ENV["ANSIBLE_ETCD_VERSION"] = 'v2'
 ports = settings['ports']
 
 Vagrant.configure(2) do |config|
