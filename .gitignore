@@ -1,3 +1,4 @@
 master.sublime-project
 master.sublime-workspace
 .vagrant/
+*.retry
