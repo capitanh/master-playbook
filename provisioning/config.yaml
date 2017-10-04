@@ -11,6 +11,8 @@ locale_lang:    en_US.UTF-8
 ports:
 - guestPort:  8080
   hostPort:   8080
+- guestPort:  8081
+  hostPort:   8081
 - guestPort:  1521
   hostPort:   1521
 - guestPort:  389

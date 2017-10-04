@@ -1,27 +1,32 @@
-jdk_basedir:           /usr/lib/java   # JDK Install dir
-jdk_version:           jdk1.8.0_131
+jdk_basedir:          /usr/lib/java   # JDK Install dir
+jdk_version:          jdk1.8.0_131
 
-jboss_home:            /opt            # JBoss install dir
-http_port:             8090            # JBoss port for http connections
-https_port:            8443            # JBoss port for https connections
+jboss_home:           /opt            # JBoss install dir
+http_port:            8090            # JBoss port for http connections
+https_port:           8443            # JBoss port for https connections
 
-oracle_http_port:      8091            # Oracle port for http connections
-oracle_listener_port:  1521            # Oracle listener port
-oracle_password:       adminpasswd     # Admin, sys and system users passwords
+oracle_http_port:     8091            # Oracle port for http connections
+oracle_listener_port: 1521            # Oracle listener port
+oracle_password:      adminpasswd     # Admin, sys and system users passwords
 
-dev_tools_dir:         /usr/lib
-maven_version:         3.5.0
-gradle_version:        4.2
+dev_tools_dir:        /usr/lib
+maven_version:        3.5.0
+gradle_version:       4.2
 
-ldap_username:         admin
-ldap_password:         secret
-ldap_basedn:           dc=golili,dc=net
+ldap_username:        admin
+ldap_password:        secret
+ldap_basedn:          dc=golili,dc=net
+
+nexus_version:        3.6.0-02
+nexus_user:           nexus
+nexus_home:           /var/lib/nexus
+nexus_port:           8081
 
 
-jenkins_user:          jenkins
-jenkins_port:          8080
-jenkins_home:          /var/lib/jenkins
-jenkins_admin_email:   jenkins@golili.net
+jenkins_user:         jenkins
+jenkins_port:         8080
+jenkins_home:         /var/lib/jenkins
+jenkins_admin_email:  jenkins@golili.net
 jenkins_params:
   url_username: admin
   url_password: admin
