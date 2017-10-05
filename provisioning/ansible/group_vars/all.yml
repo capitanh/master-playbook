@@ -32,16 +32,16 @@ jenkins_params:
   url_password: admin
   url: 'http://localhost: 8080'
 jenkins_plugins:
- # - blueocean
+  - blueocean
  # - authentication-tokens
-  - bouncycastle-api
-  - branch-api
+ # - bouncycastle-api
+ # - branch-api
  # - build-timeout
-  - credentials
-  - credentials-binding
+ # - credentials
+ # - credentials-binding
  # - display-url-api
  # - durable-task
- # - email-ext
+  - email-ext
  # - external-monitor-job
   - git
  # - git-client
@@ -55,12 +55,13 @@ jenkins_plugins:
  # - jackson2-api
  # - jquery-detached
  # - junit
-  - ldap
+ # - ldap
  # - mailer
  # - mapdb-api
  # - matrix-auth
  # - matrix-project
  # - momentjs
+ # - nexus-jenkins-plugin
  # - pam-auth
  # - pipeline-build-step
  # - pipeline-github-lib
