@@ -2,15 +2,7 @@
 - hosts: all
   roles:
     - openldap
-    #- oraclexe
+    - oraclexe
     - oraclejdk
-    #- jboss
     - jenkins
-    #- nexus
-#- include_playbook: prepare.yml
-#- import_playbook: ldap.yml
-#- import_playbook: oraclexe.yml
-#- import_playbook: oraclejdk.yml
-#- import_playbook: jboss.yml
-#- import_playbook: jenkins.yml
-#- import_playbook: nexus.yml
+    - nexus
