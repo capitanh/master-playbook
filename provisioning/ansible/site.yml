@@ -1,7 +1,15 @@
 ---
-- import_playbook: ldap.yml
+- hosts: all
+  pre_tasks:
+  - name: Update ansible roles
+    command: ./updateroles.sh
+    delegate_to: localhost
+    become: no
+  roles:
+    - openldap
+#- import_playbook: ldap.yml
 #- import_playbook: oraclexe.yml
-- import_playbook: oraclejdk.yml
+#- import_playbook: oraclejdk.yml
 #- import_playbook: jboss.yml
-- import_playbook: jenkins.yml
-- import_playbook: nexus.yml
+#- import_playbook: jenkins.yml
+#- import_playbook: nexus.yml

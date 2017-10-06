@@ -18,10 +18,11 @@ ldap_password:        secret
 ldap_basedn:          dc=golili,dc=net
 
 nexus_version:        3.6.0-02
-nexus_user:           nexus
+nexus_user:           nexus           # Nexus OS user
 nexus_home:           /var/lib/nexus
 nexus_port:           8081
-
+nexus_repo_user:      admin           # Nexus app user
+nexus_repo_password:  admin123        # Nexus app password
 
 jenkins_user:         jenkins
 jenkins_port:         8080
@@ -32,7 +33,7 @@ jenkins_params:
   url_password: admin
   url: 'http://localhost: 8080'
 jenkins_plugins:
- # - blueocean
+  - blueocean
  # - authentication-tokens
   - bouncycastle-api
   - branch-api

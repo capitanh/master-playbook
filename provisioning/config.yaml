@@ -8,6 +8,7 @@ box_name:       bento/centos-7.2
 host_name:      devserver.golili.net
 locale_lc_all:  en_US.UTF-8
 locale_lang:    en_US.UTF-8
+roles_path:     ~/.ansible/roles
 ports:
 - guestPort:  8080
   hostPort:   8080

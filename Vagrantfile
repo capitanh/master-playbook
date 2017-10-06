@@ -6,6 +6,7 @@ settings = YAML.load_file('provisioning/config.yaml')
 ENV["DEBIAN_FRONTEND"] = 'noninteractive'
 ENV["LC_ALL"] = settings['locale_lc_all']
 ENV["LANG"] = settings['locale_lang']
+ENV["ANSIBLE_ROLES_PATH"] = settings['roles_path']
 #TODO: Put every ansible vble into etcd
 #ENV["ANSIBLE_ETCD_URL"] = 'http://127.0.0.1:2379'
 #ENV["ANSIBLE_ETCD_VERSION"] = 'v2'
@@ -25,8 +26,6 @@ Vagrant.configure(2) do |config|
     vb.gui = false
   end
   config.vm.hostname = settings['host_name']
-  #Needed to avoid 'Inappropriate ioctl for device' error message
-  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/ansible/site.yml"
