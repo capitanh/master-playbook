@@ -27,6 +27,11 @@ Vagrant.configure(2) do |config|
   end
   config.vm.hostname = settings['host_name']
 
+  # Delete and download ansible roles
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "provisioning/ansible/updateroles.yml"
+  end
+
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/ansible/site.yml"
   end

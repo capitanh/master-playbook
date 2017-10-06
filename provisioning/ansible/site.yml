@@ -1,12 +1,13 @@
 ---
 - hosts: all
-  pre_tasks:
-  - name: Update ansible roles
-    command: ./updateroles.sh
-    delegate_to: localhost
-    become: no
   roles:
     - openldap
+    #- oraclexe
+    - oraclejdk
+    #- jboss
+    - jenkins
+    #- nexus
+#- include_playbook: prepare.yml
 #- import_playbook: ldap.yml
 #- import_playbook: oraclexe.yml
 #- import_playbook: oraclejdk.yml
