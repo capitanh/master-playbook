@@ -3,17 +3,15 @@
 
 require 'yaml'
 settings = YAML.load_file('provisioning/config.yaml')
-ENV["DEBIAN_FRONTEND"] = 'noninteractive'
-ENV["LC_ALL"] = settings['locale_lc_all']
-ENV["LANG"] = settings['locale_lang']
-ENV["ANSIBLE_ROLES_PATH"] = settings['roles_path']
+
 #TODO: Put every ansible vble into etcd
 #ENV["ANSIBLE_ETCD_URL"] = 'http://127.0.0.1:2379'
 #ENV["ANSIBLE_ETCD_VERSION"] = 'v2'
-ports = settings['ports']
 
 Vagrant.configure(2) do |config|
   config.vm.box = settings['box_name']
+  config.vm.hostname = settings['host_name']
+  ports = settings['ports']
   ports.each do |forwarded_port|
     config.vm.network "forwarded_port", guest: forwarded_port['guestPort'], host: forwarded_port['hostPort']
   end
@@ -25,15 +23,12 @@ Vagrant.configure(2) do |config|
     vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
     vb.gui = false
   end
-  config.vm.hostname = settings['host_name']
-
-  # Delete and download ansible roles
-  config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "provisioning/ansible/updateroles.yml"
-  end
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/ansible/site.yml"
+    #ansible.verbose = "vvv"
+    ansible.galaxy_role_file = "provisioning/ansible/requirements.yml"
+    ansible.galaxy_roles_path = settings['roles_path']
   end
 
 end

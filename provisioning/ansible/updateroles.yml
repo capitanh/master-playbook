@@ -1,7 +1,0 @@
----
-- hosts: all
-  tasks:
-  - name: Update ansible roles
-    command: "{{playbook_dir}}/updateroles.sh"
-    delegate_to: localhost
-    become: no

@@ -1,8 +1,8 @@
 ---
 - hosts: all
   roles:
-    - openldap
-    - oraclexe
+   # - openldap
+   # - oraclexe
     - oraclejdk
     - jenkins
-    - nexus
+   # - nexus
