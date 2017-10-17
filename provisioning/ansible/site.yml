@@ -1,8 +1,7 @@
 ---
 - hosts: all
   roles:
-   # - openldap
-   # - oraclexe
-    - oraclejdk
-    - jenkins
-   # - nexus
+    - capitanh.oraclejdk-ansible-role
+    - capitanh.mysql-ansible-role
+    - wildfly
+

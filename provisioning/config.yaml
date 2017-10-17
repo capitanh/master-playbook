@@ -18,3 +18,7 @@ ports:
   hostPort:   1521
 - guestPort:  389
   hostPort:   10389
+- guestPort:  8153
+  hostPort:   8153
+- guestPort:  9990
+  hostPort:   9990
