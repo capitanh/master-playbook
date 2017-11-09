@@ -1,24 +1,26 @@
 ---
 provisioning:   ansible  # [puppet|ansible]
-vb_name:        devserver
+vb_name:        cdserver
 vb_memory:      4096
 vb_cpus:        2
-#box_name:      ubuntu/trusty64
+#box_name:       bento/ubuntu-16.04
 box_name:       bento/centos-7.2
-host_name:      devserver.golili.net
+host_name:      cdserver.golili.net
 locale_lc_all:  en_US.UTF-8
 locale_lang:    en_US.UTF-8
 roles_path:     ~/.ansible/roles
 ports:
-- guestPort:  8080
-  hostPort:   8080
-- guestPort:  8081
-  hostPort:   8081
-- guestPort:  1521
-  hostPort:   1521
+#- guestPort:  8080
+#  hostPort:   8080
+#- guestPort:  8081
+#  hostPort:   8081
+#- guestPort:  1521
+#  hostPort:   1521
 - guestPort:  389
   hostPort:   10389
 - guestPort:  8153
   hostPort:   8153
-- guestPort:  9990
-  hostPort:   9990
+- guestPort:  8154
+  hostPort:   8154
+#- guestPort:  9990
+#  hostPort:   9990

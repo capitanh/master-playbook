@@ -13,6 +13,8 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = settings['host_name']
   ports = settings['ports']
   ports.each do |forwarded_port|
+    #config.vm.network "private_network", type: "dhcp"
+    #config.vm.network "private_network", ip: "10.0.2.15"
     config.vm.network "forwarded_port", guest: forwarded_port['guestPort'], host: forwarded_port['hostPort']
   end
 
