@@ -1,8 +1,7 @@
 ---
 - hosts: all
   roles:
-    - capitanh.oraclejdk-ansible-role
-    #- capitanh.mysql-ansible-role
-    - gocd
-
-
+   - capitanh.oraclejdk-ansible-role
+   - capitanh.openldap-ansible-role
+   # - capitanh.nexus-ansible-role
+   - capitanh.gocd-ansible-role
