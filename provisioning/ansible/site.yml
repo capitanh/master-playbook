@@ -2,6 +2,7 @@
 - hosts: all
   roles:
     - capitanh.oraclejdk-ansible-role
-    - capitanh.mysql-ansible-role
-    - wildfly
+    #- capitanh.mysql-ansible-role
+    - gocd
+
 
