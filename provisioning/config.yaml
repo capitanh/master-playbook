@@ -3,24 +3,24 @@ provisioning:   ansible  # [puppet|ansible]
 vb_name:        cdserver
 vb_memory:      4096
 vb_cpus:        2
-#box_name:       bento/ubuntu-16.04
-box_name:       bento/centos-7.2
+box_name:       bento/ubuntu-16.04
+#box_name:       bento/centos-7.2
 host_name:      cdserver.golili.net
 locale_lc_all:  en_US.UTF-8
 locale_lang:    en_US.UTF-8
 roles_path:     ~/.ansible/roles
 ports:
-#- guestPort:  8080
+#- guestPort:  8080   #Jenkins and wildfly
 #  hostPort:   8080
-#- guestPort:  8081
-#  hostPort:   8081
-#- guestPort:  1521
+- guestPort:  8081    # Nexus
+  hostPort:   8081
+#- guestPort:  1521   #Mysql
 #  hostPort:   1521
-- guestPort:  389
+- guestPort:  389     #OpenLDAAP
   hostPort:   10389
-- guestPort:  8153
+- guestPort:  8153    Go.cd server web ui
   hostPort:   8153
-- guestPort:  8154
+- guestPort:  8154    Go.cd server listen por for agensts
   hostPort:   8154
-#- guestPort:  9990
+#- guestPort:  9990   #wildly console
 #  hostPort:   9990

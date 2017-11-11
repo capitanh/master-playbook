@@ -20,6 +20,42 @@ gradle_version:       4.2
 ldap_username:        admin
 ldap_password:        secret
 ldap_basedn:          dc=golili,dc=net
+ldap_users:
+  admin:
+    cn: System Administrator
+    givenname: System
+    sn: Administrator
+    mail: admin@golili.net
+    userpassword: admin
+  lnovo:
+    cn: Luis Novo
+    givenname: Luis
+    sn: Novo
+    mail: lnovo@golili.net
+    userpassword: alibaba
+  erodrigyez:
+    cn: Elena Rodriguez
+    givenname: Elena
+    sn: Rodriguez
+    mail: erodriguez@golili.net
+    userpassword: alibaba
+  aperez:
+    cn: Alberto Perez
+    givenname: Alberto
+    sn: Perez
+    mail: aperez@golili.net
+    userpassword: alibaba
+
+ldap_groups:
+  - name: administrators
+    members:
+      - admin
+  - name: developers
+    members:
+      - lnovo
+      - erodriguez
+      - aperez
+
 
 nexus_version:        3.6.0-02
 nexus_user:           nexus           # Nexus OS user
