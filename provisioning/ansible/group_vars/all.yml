@@ -66,7 +66,7 @@ nexus_repo_password:  admin123        # Nexus app password
 
 go_server_port:     8153        # go.cd http port
 go_server_ssl:      8154        # go.cd ssl listen port for agents
-go_pipelines_group: golil.net   # go.cd pipelines group name
+go_pipelines_group: golili.net   # go.cd pipelines group name
 go_environment:     Integration # go.cd initial configured environment
 
 jenkins_user:         jenkins
