@@ -17,6 +17,10 @@ dev_tools_dir:        /usr/lib
 maven_version:        3.5.0
 gradle_version:       4.2
 
+ldap_auth:
+  server_uri: ldap://localhost:389
+  bind_dn: cn=admin,dc=golili,dc=net
+  bind_pw: secret
 ldap_username:        admin
 ldap_password:        secret
 ldap_basedn:          dc=golili,dc=net

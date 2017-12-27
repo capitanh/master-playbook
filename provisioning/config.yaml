@@ -3,8 +3,8 @@ provisioning:   ansible  # [puppet|ansible]
 vb_name:        cdserver
 vb_memory:      4096
 vb_cpus:        2
-box_name:       bento/ubuntu-16.04
-#box_name:       centos/7
+#box_name:       bento/ubuntu-16.04
+box_name:       centos/7
 host_name:      cdserver.golili.net
 locale_lc_all:  en_US.UTF-8
 locale_lang:    en_US.UTF-8
@@ -24,3 +24,5 @@ ports:
   hostPort:   8154
 #- guestPort:  9990   #wildly console
 #  hostPort:   9990
+- guestPort:  9090   # Prometheus server
+  hostPort:   9090
