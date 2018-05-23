@@ -12,8 +12,8 @@ Vagrant.configure(2) do |config|
   config.vm.box = settings['box_name']
   config.vm.hostname = settings['host_name']
   ports = settings['ports']
+  config.vm.network "private_network", ip: "192.168.2.2", virtualbox__intnet: true
   ports.each do |forwarded_port|
-    config.vm.network "private_network", ip: "192.168.2.2", virtualbox__intnet: true
     config.vm.network "forwarded_port", guest: forwarded_port['guestPort'], host: forwarded_port['hostPort']
   end
 

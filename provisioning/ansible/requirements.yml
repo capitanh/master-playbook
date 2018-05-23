@@ -1,5 +1,5 @@
 - src: capitanh.openldap-ansible-role
-- src: capitanh.oraclejdk-ansible-role
+#- src: capitanh.oraclejdk-ansible-role
 #- src: capitanh.mysql-ansible-role
 #- src: capitanh.jenkins-ansible-role
 #- src: capitanh.jboss-ansible-role

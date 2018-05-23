@@ -61,17 +61,17 @@ ldap_groups:
       - aperez
 
 
-nexus_version:        3.6.0-02
+nexus_version:        3.12.0-01
 nexus_user:           nexus           # Nexus OS user
-nexus_home:           /opt/nexus
+nexus_home:           /var/lib/nexus
 nexus_port:           8081
 nexus_repo_user:      admin           # Nexus app user
 nexus_repo_password:  admin123        # Nexus app password
 
-go_server_port:     8153        # go.cd http port
-go_server_ssl:      8154        # go.cd ssl listen port for agents
-go_pipelines_group: golili.net   # go.cd pipelines group name
-go_environment:     Integration # go.cd initial configured environment
+go_server_port:     8153              # go.cd http port
+go_server_ssl:      8154              # go.cd ssl listen port for agents
+go_pipelines_group: golili.net        # go.cd pipelines group name
+go_environment:     Integration       # go.cd initial configured environment
 
 jenkins_user:         jenkins
 jenkins_port:         8080
